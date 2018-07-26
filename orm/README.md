@@ -15,6 +15,9 @@ $db->where('id=1')->where('status=1')->order('id desc')->field('id,title')->limi
 //获取一条数据
 $db->where('id=1')->get();
 
+//关联查询
+$db->hasOne('table','外键','主键');
+
 //模型用法 继承Model
 class A extends database\Model{
 //指定表名
